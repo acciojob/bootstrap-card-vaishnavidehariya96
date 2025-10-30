@@ -1,2 +1,68 @@
+/* General Page Styling */
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
-/* Your CSS Code here. */
+/* Center the heading and give some spacing */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Card Deck Customization */
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Individual Card Styling */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.card-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Card Body Text */
+.card-text {
+  font-size: 0.95rem;
+  color: #222;
+}
+
+/* Footer muted text */
+.card-footer {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
